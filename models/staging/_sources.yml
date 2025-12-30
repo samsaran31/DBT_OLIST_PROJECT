@@ -57,7 +57,7 @@ sources:
                     - shipped
                     - delivered
                     - canceled
-                    - unavailable1
+                    - unavailable
 
           - name: order_purchase_timestamp
             description: "Timestamp when the purchase was placed. Used as a proxy for load time in this training repo."
