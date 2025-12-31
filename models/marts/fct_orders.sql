@@ -20,6 +20,7 @@ WITH orders_enriched AS (
     SELECT
         order_id,
         customer_id,
+        {{ dbt_utils.generate_surrogate_key(['order_id', 'customer_id']) }} AS order_customer_key,
         order_status,
         order_purchase_ts,
         order_approved_ts,
