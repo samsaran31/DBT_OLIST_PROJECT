@@ -1,9 +1,16 @@
 name: 'dbt_olist_project'
-version: '1.0'
-config-version: 2
-
 profile: 'dbt_olist_project'
-
 models:
   dbt_olist_project:
-    +materialized: table
+    +persist_docs:
+      relation: true
+      columns: true
+    staging:
+      +tags: ["daily"]
+      +materialized: view
+    intermediate:
+      +tags: ["hourly"]
+      +materialized: view
+    marts:
+      +tags: ["daily"]
+      +materialized: table

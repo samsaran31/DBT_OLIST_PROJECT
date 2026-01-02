@@ -47,7 +47,6 @@ WITH orders_enriched AS (
     )
     {% endif %}
 )
-
 SELECT
     order_id,
     customer_id,
@@ -68,3 +67,4 @@ SELECT
     payment_row_count,
     payment_type_any
 FROM orders_enriched
+  
