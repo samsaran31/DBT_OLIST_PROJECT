@@ -62,3 +62,4 @@ jobs:
 
       - name: dbt docs generate
         run: dbt docs generate
+
