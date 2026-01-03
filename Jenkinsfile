@@ -14,7 +14,7 @@ pipeline {
     SNOWFLAKE_DATABASE  = "OLIST"
     SNOWFLAKE_SCHEMA    = "ANALYTICS_DEV"
     DBT_THREADS         = "4"
-    DBT_TARGET          = "dev"
+    DBT_TARGET          = "prod"
   }
 
   stages {
