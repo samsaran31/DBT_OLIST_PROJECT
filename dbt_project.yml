@@ -14,3 +14,5 @@ models:
     marts:
       +tags: ["daily"]
       +materialized: table
+ 
+ 
